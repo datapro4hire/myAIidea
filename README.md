@@ -1,5 +1,5 @@
 # myAIidea
-Building my AI idea with with the help of a great community.
+Building my AI idea with the help of a great community.
 
 NX8020™: AI process mining and systems integration platform.
 
