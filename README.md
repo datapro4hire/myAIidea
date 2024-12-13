@@ -1,25 +1,36 @@
-# myAIidea
-Building my AI idea with the help of a great community.
+# Project Template
 
-MX8020™
-Quick Start
-Setup
+## Quick Start
+
+## Setup
+
+```bash
 pip install -r requirements.txt
-Run
+```
+
+## Run
+
+```python
 python main.py -d data/ -o results/
-Overview for the quiz generation
-This project is an AI process mining and systems integration platform. 
-Use Machine Learning to identify optimal processes. Leverage Large Language Models 
-to implement systems integrations that are simpler, faster, and cheaper.
+```
 
-1. Input Data Used
-The input data is tbd
+## Overview for the quiz generation
 
-2. Output Data
-The output data is a JSON file containing tbd
+This project is a simple implementation of a quiz generation system using a language model. The system takes an input text and generates a quiz based on the text. The quiz is then compared to an expected output to evaluate the performance of the system.
 
-3. Models Used
-OpenAI GPT-4o
-llama 3.X
-4. Evaluation Method
-tbd
+## 1. Input Data Used
+
+The input data is a text file containing the text to be used for the quiz generation. The text is a Wikipedia article about Santa Claus.
+
+## 2. Output Data
+
+The output data is a JSON file containing the generated quiz, the expected output, and the ROUGE-1 F1 score.
+
+## 3. Models Used
+
+- OpenAI GPT-4o
+- OpenAI GPT-4o-mini
+
+## 4. Evaluation Method
+
+The ROUGE-1 F1 score is used to evaluate the performance of the system. The score is calculated by comparing the generated quiz to the expected output.
