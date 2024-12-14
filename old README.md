@@ -13,7 +13,7 @@ Use Machine Learning to identify optimal processes. Leverage Large Language Mode
 to implement systems integrations that are simpler, faster, and cheaper.
 
 1. Input Data Used
-The input data is tbd
+The input data is operational data logs found in Kaggle. It includes task label by operational area, task duration, and task volume. It also includes qualitative observations.
 
 2. Output Data
 The output data is a JSON file containing tbd
@@ -21,5 +21,6 @@ The output data is a JSON file containing tbd
 3. Models Used
 OpenAI GPT-4o
 llama 3.X
+
 4. Evaluation Method
 tbd
