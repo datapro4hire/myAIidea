@@ -21,7 +21,7 @@ to optimize current systems integrations.
 
 ## 1. Input Data Used
 
-The input data is a text file containing tbd.
+The input data is operational data logs found in Kaggle. It includes task label by operational area, task duration, and task volume. It also includes qualitative observations.
 
 ## 2. Output Data
 
@@ -29,7 +29,8 @@ The output data is a JSON file containing tbd
 
 ## 3. Models Used
 
-- Llama 3.x
+Llama 3.x
+OpenAI GPT-4o
 
 ## 4. Evaluation Method
 
