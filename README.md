@@ -21,7 +21,13 @@ to optimize current systems integrations.
 
 ## 1. Input Data Used
 
-The input data is operational data for a grocery store logs found in Kaggle. It includes: 1) Task Label by operational area, 2)Task Duration, and 3) Task Volume. It also includes qualitative observations.
+The input data is operational data for a grocery store logs found in Kaggle. It includes: 
+
+#1) Task Label by operational area
+#2)Task Duration
+#3) Task Volume. 
+
+It also includes qualitative observations.
 
 ## 2. Output Data
 
