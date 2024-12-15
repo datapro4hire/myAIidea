@@ -10,8 +10,9 @@ pip install -r requirements.txt
 
 ## Run
 
-```streamlit run app.py #This will launch the Streamlit app, which will guide you through the process mining and visualization workflow.
-```
+``streamlit run bottlenecks.py
+``
+#This will launch the Streamlit app, which will guide you through the process mining and visualization workflow.
 
 ## Overview for the systems integrations optimizer
 
