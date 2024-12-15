@@ -14,22 +14,22 @@ pip install -r requirements.txt
 python main.py -d data/ -o results/
 ```
 
-## Overview for the quiz generation
+## Overview for the systems integrations optimizer
 
-This project is an AI process mining and systems integration platform. It will use Machine Learning to identify pain points and bottlenecks. It will also leverage Large Language Models 
+This project is an AI process mining and systems integration platform. It will use Machine Learning to identify bottlenecks. It will also leverage Large Language Models 
 to optimize current systems integrations.
 
 ## 1. Input Data Used
 
-The input data is operational data logs found in Kaggle. It includes task label by operational area, task duration, and task volume. It also includes qualitative observations.
+The input data is operational data for a grocery store logs found in Kaggle. It includes: 1) Task Label by operational area, 2)Task Duration, and 3) Task Volume. It also includes qualitative observations.
 
 ## 2. Output Data
 
-The output data is a JSON file containing tbd
+The output data is a JSON file containing the expected output, the score (tbd), and an interactive workflow.
 
 ## 3. Models Used
 
-Llama 3.x
+Llama 3.3
 OpenAI GPT-4o
 
 ## 4. Evaluation Method
