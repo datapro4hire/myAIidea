@@ -23,9 +23,9 @@ to optimize current systems integrations.
 
 The input data is operational data for a grocery store logs found in Kaggle. It includes: 
 
-** 1) Task Label by operational area
-** 2)Task Duration
-** 3) Task Volume. 
+1. Task Label by operational area
+2. Task Duration
+3. Task Volume. 
 
 It also includes qualitative observations.
 
@@ -35,8 +35,8 @@ The output data is a JSON file containing the expected output, the score (tbd), 
 
 ## 3. Models Used
 
-** Llama 3.3
-** OpenAI GPT-4o
+1. Llama 3.3
+2. OpenAI GPT-4o
 
 ## 4. Evaluation Method
 
