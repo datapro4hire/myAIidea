@@ -1,1 +1,12 @@
-rouge-score
+* Streamlit
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Transformers
+* Huggingface
+* Procesmining
+* Graphviz
+* Networkx
+* Plotly
+* Bokeh
