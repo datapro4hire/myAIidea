@@ -2,7 +2,7 @@ import argparse
 import json
 from src import utils as ut
 
-from src import agents
+from myAIidea.src import agents
 from pathlib import Path
 
 
