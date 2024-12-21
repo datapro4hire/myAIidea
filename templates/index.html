@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Generator</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .steps {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .step {
+            margin: 5px 0;
+            padding: 5px;
+            background: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz Generator</h1>
+    <form id="uploadForm">
+        <input type="file" name="file" required>
+        <button type="submit">Generate Quiz</button>
+    </form>
+
+    <div class="steps" id="steps"></div>
+    <div id="results"></div>
+
+    <script>
+        $('#uploadForm').on('submit', function(e) {
+            e.preventDefault();
+            
+            var formData = new FormData(this);
+            
+            $.ajax({
+                url: '/generate',
+                type: 'POST',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function(response) {
+                    $('#steps').empty();
+                    response.steps.forEach(function(step) {
+                        $('#steps').append(
+                            `<div class="step">Step ${step.step}: ${step.description}</div>`
+                        );
+                    });
+                    
+                    $('#results').html('<pre>' + response.generated_text + '</pre>');
+                },
+                error: function(xhr, status, error) {
+                    alert('Error: ' + error);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
