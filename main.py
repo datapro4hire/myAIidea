@@ -57,3 +57,30 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     main(args.datadir, args.output, args.debug)
+
+    # ... existing code ...
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Quiz Generator Web App")
+    parser.add_argument(
+        "--datadir",
+        type=str,
+        default="data",
+        help="Directory containing input data",
+    )
+    parser.add_argument(
+        "--output",
+        type=str,
+        default="results",
+        help="Output directory for results",
+    )
+    parser.add_argument(
+        "--debug",
+        action="store_true",
+        help="Run in debug mode",
+    )
+
+    args = parser.parse_args()
+    main(args.datadir, args.output, args.debug)
+
+    
