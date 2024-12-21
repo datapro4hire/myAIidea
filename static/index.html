@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPaaS Data Analysis Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>iPaaS Data Analysis Tool</h1>
+        <p>Upload your files for instant analysis and recommendations</p>
+    </header>
+
+    <main>
+        <section id="file-upload">
+            <h2>File Upload</h2>
+            <form id="upload-form" enctype="multipart/form-data">
+                <input type="file" id="file-input" name="files" multiple accept=".pdf,.xlsx,.csv,.jpeg,.jpg,.mp3,.mp4">
+                <button type="submit">Upload and Analyze</button>
+            </form>
+            <div id="upload-status"></div>
+        </section>
+
+        <section id="analysis-results" style="display: none;">
+            <h2>Analysis Results</h2>
+            <div id="summary">
+                <h3>Summary</h3>
+                <div id="summary-content"></div>
+            </div>
+            <div id="detailed-analysis">
+                <h3>Detailed Analysis</h3>
+                <div id="analysis-content"></div>
+            </div>
+            <div id="recommendations">
+                <h3>Recommendations</h3>
+                <ul id="recommendations-list"></ul>
+            </div>
+            <div id="follow-up">
+                <h3>Follow-up Questions</h3>
+                <ul id="questions-list"></ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 iPaaS Data Analysis Tool. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
