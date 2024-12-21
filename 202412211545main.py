@@ -1,7 +1,8 @@
 import argparse
 import json
 from src import utils as ut
-from src.agents import QuizAgent  # Import the QuizAgent class correctly
+
+from src import agents
 from pathlib import Path
 
 
@@ -24,7 +25,7 @@ def main(datadir, output="results"):
         return
 
     # Load the agent
-    agent = QuizAgent()
+    agent = agents.QuizAgent()
 
     # Generate quizzes
     generated_text = agent.generate_questions(text_path=input_file, num_questions=3)
@@ -76,8 +77,7 @@ if __name__ == "__main__":
         "--debug",
         action="store_true",
         help="Run in debug mode",
-    )  # Added "mode" to complete the help message
+    )
 
     args = parser.parse_args()
     main(args.datadir, args.output)
-

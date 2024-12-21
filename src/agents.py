@@ -1,7 +1,6 @@
-from . import agents
-from . import utils
-
-# Add your agent-related code here
-# For now, we can add a placeholder
-def example_agent():
-    pass 
+# src/agents.py
+class QuizAgent:
+    def generate_questions(self, text_path, num_questions):
+        # Implement the logic to generate questions here
+        # For now, just return a placeholder text
+        return "Generated questions"
